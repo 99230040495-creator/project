@@ -1,0 +1,6 @@
+--- Auth Flow Test: 2026-02-25T16:21:01.122Z ---
+Step 1: Sending OTP for test_1772036461122@example.com
+Send OTP Result: 200 - {"message":"OTP sent successfully"}
+Step 2: Connecting to DB to retrieve OTP
+FATAL ERROR: connect ECONNREFUSED 127.0.0.1:27017
+--- Test End ---

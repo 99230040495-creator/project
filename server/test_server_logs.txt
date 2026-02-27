@@ -1,0 +1,34 @@
+[dotenv@17.3.1] injecting env (8) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+Server running on port 5001
+Test MongoDB Connected (In-Memory) at mongodb://127.0.0.1:58463/
+--- EMAIL SERVICE ---
+To: test_1772036461122@example.com
+Subject: AquaNova Registration OTP
+Message: Your AquaNova registration OTP is: 531682. Valid for 5 minutes.
+----------------------
+Creating user: email=test_1772036461122@example.com, passwordLength=12
+DEBUG: pre-save hook for test_1772036461122@example.com. isModified('password')=true, hasPassword=true
+DEBUG: password hashed for test_1772036461122@example.com. Old length: 12, New length: 60, New start: $2b$10$bYu
+User created: id=699f21ad6da419716a7da44b, hashedPasswordLength=60
+DEBUG: Comparing enteredPassword (len: 12) with stored hash (len: 60)
+Login DEBUG: email=test_1772036461122@example.com, found=true, passProvidedLength=12, hashInDBLength=60, match=true
+--- EMAIL SERVICE ---
+To: mixed_case_1772036555850@example.com
+Subject: AquaNova Registration OTP
+Message: Your AquaNova registration OTP is: 919022. Valid for 5 minutes.
+----------------------
+Creating user: email=mixed_case_1772036555850@example.com, passwordLength=12
+DEBUG: pre-save hook for mixed_case_1772036555850@example.com. isModified('password')=true, hasPassword=true
+DEBUG: password hashed for mixed_case_1772036555850@example.com. Old length: 12, New length: 60, New start: $2b$10$NtJ
+User created: id=699f21d06da419716a7da453, hashedPasswordLength=60
+--- EMAIL SERVICE ---
+To: mixed_case_1772036573136@example.com
+Subject: AquaNova Registration OTP
+Message: Your AquaNova registration OTP is: 208800. Valid for 5 minutes.
+----------------------
+Creating user: email=mixed_case_1772036573136@example.com, passwordLength=12
+DEBUG: pre-save hook for mixed_case_1772036573136@example.com. isModified('password')=true, hasPassword=true
+DEBUG: password hashed for mixed_case_1772036573136@example.com. Old length: 12, New length: 60, New start: $2b$10$402
+User created: id=699f21e16da419716a7da45a, hashedPasswordLength=60
+DEBUG: Comparing enteredPassword (len: 12) with stored hash (len: 60)
+Login DEBUG: email=mixed_case_1772036573136@example.com, found=true, passProvidedLength=12, hashInDBLength=60, match=true

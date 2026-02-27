@@ -1,0 +1,9 @@
+--- Auth Diagnostic V2 ---
+Test Password: Password123!
+Salt generated: $2b$10$L.B.LK9.WXjLbpLdemN3le
+Hash generated: $2b$10$L.B.LK9.WXjLbpLdemN3leHQ/r7v2MBh2EKaMKiMGIgxv6hMSVJpu
+Hash length: 60
+Match correct pass: true
+Match wrong pass: false
+Match pass with space: false
+--- End ---

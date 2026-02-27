@@ -1,0 +1,20 @@
+export const majorIndianPorts = [
+    { name: "Veraval Coast", state: "Gujarat", coords: [20.9, 70.0] },
+    { name: "Porbandar Deep Sea", state: "Gujarat", coords: [21.0, 68.5] },
+    { name: "Mumbai High", state: "Maharashtra", coords: [19.0, 70.5] },
+    { name: "Alibaug Coast", state: "Maharashtra", coords: [18.6, 72.8] },
+    { name: "Ratnagiri Deep", state: "Maharashtra", coords: [16.5, 71.5] },
+    { name: "Goa Coast", state: "Goa", coords: [15.4, 73.7] },
+    { name: "Mangalore Coast", state: "Karnataka", coords: [12.8, 74.8] },
+    { name: "Karwar Offshore", state: "Karnataka", coords: [14.0, 72.5] },
+    { name: "Kochi Backwaters", state: "Kerala", coords: [9.9, 76.2] },
+    { name: "Kozhikode Deep", state: "Kerala", coords: [11.0, 73.5] },
+    { name: "Marina Beach Coast", state: "Tamil Nadu", coords: [13.0, 80.3] },
+    { name: "Gulf of Mannar", state: "Tamil Nadu", coords: [8.0, 79.5] },
+    { name: "Vizag Coast", state: "Andhra Pradesh", coords: [17.7, 83.3] },
+    { name: "Nellore Deep", state: "Andhra Pradesh", coords: [14.5, 82.5] },
+    { name: "Puri Coast", state: "Odisha", coords: [19.8, 85.8] },
+    { name: "Paradip Offshore", state: "Odisha", coords: [20.0, 88.5] },
+    { name: "Digha Coast", state: "West Bengal", coords: [21.6, 87.5] },
+    { name: "Sundarbans Deep", state: "West Bengal", coords: [20.5, 89.0] }
+];

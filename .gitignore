@@ -1,0 +1,14 @@
+# ignore node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# lockfiles
+package-lock.json
+yarn.lock
+
+# logs and temp
+*.log
+
+env
+.DS_Store
