@@ -72,26 +72,14 @@ router.post('/send-otp', async (req, res) => {
     }
 });
 
-// @desc    Register new user
+// @desc    Register new user (no OTP)
 // @route   POST /api/auth/register
 // @access  Public
 router.post('/register', async (req, res) => {
-    let { name, email, password, boatType, location, language, otpCode } = req.body;
+    let { name, email, password, boatType, location, language } = req.body;
 
     try {
         email = email.trim().toLowerCase();
-
-        // Verify OTP from Supabase
-        const { data: otpRecord } = await supabase
-            .from('otps')
-            .select()
-            .eq('email', email)
-            .single();
-
-        const isTestUser = email === 'test@aquanova.com' && otpCode === '123456';
-        if (!isTestUser && (!otpRecord || otpRecord.otp !== otpCode)) {
-            return res.status(400).json({ message: 'Invalid or expired OTP' });
-        }
 
         // Check if user exists
         const { data: userExists } = await supabase
@@ -122,9 +110,6 @@ router.post('/register', async (req, res) => {
             .single();
 
         if (createError) throw createError;
-
-        // Delete OTP
-        await supabase.from('otps').delete().eq('email', email);
 
         res.status(201).json({
             id: user.id,
